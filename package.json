@@ -10,7 +10,12 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write",
     "lint-staged": "lint-staged",
-        "prepare": "husky install"
+           "prepare": "husky install"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"npx lint-staged"
+    }
   },
   "lint-staged": {
     "*.{vue,js,jsx,ts,tsx}": [
