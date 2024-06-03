@@ -9,11 +9,11 @@
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write",
-             "prepare": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{vue,js,jsx,ts,tsx}": [
-      "eslint --fix",
+      "eslint",
       "prettier --write"
     ],
     "*.{css,less,scss,html,md}": [
@@ -33,7 +33,7 @@
     "@rushstack/eslint-patch": "^1.8.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.5",
     "eslint": "^8.42.0",
@@ -42,7 +42,7 @@
     "husky": "^9.0.11",
     "jsdom": "^24.0.0",
     "lint-staged": "^15.2.5",
-    "prettier": "^3.2.5",
+    "prettier": "^2.8.8",
     "vite": "^5.2.8",
     "vitest": "^1.4.0"
   }
